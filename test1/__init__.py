@@ -1,7 +1,7 @@
 import check50
 
 @check50.check()
-def exists_ir():
+def exists():
   """IteratorRemover.java and IteratorRemoverRunner.java exist"""
   check50.exists("IteratorRemover.java", "IteratorRemoverRunner.java")
   
