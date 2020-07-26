@@ -5,16 +5,16 @@ check50:
         stdout: Hello, world!
         exit: 0
      foo:
-      - run: python3 foo.py
-        stdin: baz
-        stdout: baz
-        exit: 0
+       - run: python3 foo.py
+         stdin: baz
+         stdout: baz
+         exit: 0
     bar:
-      - run: python3 bar.py
-        stdin: baz
-        stdout: bar baz
-      - run: python3 bar.py
-        sdtin:
+       - run: python3 bar.py
+         stdin: baz
+         stdout: bar baz
+       - run: python3 bar.py
+         stdin:
           - baz
           - qux
         stdout:
