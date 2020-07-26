@@ -1,5 +1,5 @@
 check50:
   files:
     - !exculde "*"
-    - !include "IteratorRemover.java"
-    - !include "IteratorRemoverRunner.java"
+    - !include "IteratorRemover.*"
+    - !include "IteratorRemoverRunner.*"
