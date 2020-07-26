@@ -8,4 +8,4 @@ def exists():
 @check50.check(exists)
 def compiles():
   """IteratorRemover.java compiles"""
-  check50.java.compile("IteratorRemover.java")
+  check50.compile("IteratorRemover.java")
