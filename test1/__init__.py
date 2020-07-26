@@ -1,5 +1,4 @@
 import check50
-import check50.java
 
 @check50.check()
 def exists():
@@ -7,6 +6,6 @@ def exists():
   check50.exists("IteratorRemover.java", "IteratorRemoverRunner.java")
   
 @check50.check(exists)
-def compiles():
-  """IteratorRemover.java compiles"""
-  check50.java.compile("IteratorRemover.java")
+def check1():
+  """"a b c a b c a   a -> [b, c, b, c]"""
+  check50.run("java IteratorRemoverRunner").stdout("[b, c, b, c]").exit(0)
