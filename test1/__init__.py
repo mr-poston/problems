@@ -8,4 +8,4 @@ def exists_ir():
 @check50.check()
 def exists_irr():
   """IteratorRemoverRunner.java exists"""
-  check50.exists("IteratorRemoverRunner.java)
+  check50.exists("IteratorRemoverRunner.java")
