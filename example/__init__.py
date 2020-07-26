@@ -8,4 +8,4 @@ def exists(): # the name of the check
 @check50.check(exists) # only run this check id the exists check has passed
 def hello_world():
     """hello world"""
-    check50.run("python3 hello.py").stdout("Hello, world!", regex=False).exit(0)
+    check50.run("python3 hello.py").stdout("[Hh]ello, world!", regex=True).exit(0)
