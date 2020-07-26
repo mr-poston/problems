@@ -8,4 +8,4 @@ def exists():
 @check50.check(exists)
 def check1():
   """"a b c a b c a   a -> [b, c, b, c]"""
-  check50.run("java IteratorRemoverRunner").stdout("[b, c, b, c]").exit(0)
+  check50.run("java IteratorRemoverRunner").stdout("[b, c, b, c]").exit(1)
