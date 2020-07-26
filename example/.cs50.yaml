@@ -1,22 +1,22 @@
 check50:
   checks:
     hello world:
-      - run: python3 hello.py
-        stdout: Hello, world!
-        exit: 0
-     foo:
-       - run: python3 foo.py
-         stdin: baz
-         stdout: baz
-         exit: 0
+      - run: python3 hello.py # run python3 hello.py
+        stdout: Hello, world! # expect Hello, world! in stdout
+        exit: 0 # expect program to exit with exitcode 0
+    foo:
+      - run: python3 foo.py # run python3 foo.py
+        stdin: baz # insert baz into stdin
+        stdout: baz # expect baz in stdout
+        exit: 0 # expect program to exit with exitcode 0
     bar:
-       - run: python3 bar.py
-         stdin: baz
-         stdout: bar baz
-       - run: python3 bar.py
-         stdin:
-          - baz
-          - qux
+      - run: python3 bar.py # run python3 bar.py
+        stdin: baz # insert baz into stdin
+        stdout: bar baz # expect bar baz in stdout
+      - run: python3 bar.py # run python3 bar.py
+        stdin:
+          - baz # insert baz into stdin
+          - qux # insert qux into stdin
         stdout:
-          - bar baz
-          - bar qux
+          - bar baz # first expect bar baz in stdout
+          - bar qux # then expect bar qux in stdout
