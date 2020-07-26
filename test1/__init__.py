@@ -1,4 +1,5 @@
 import check50
+import check50.java
 
 @check50.check()
 def exists():
@@ -8,4 +9,4 @@ def exists():
 @check50.check(exists)
 def compiles():
   """IteratorRemover.java compiles"""
-  check50.compile("IteratorRemover.java")
+  check50.java.compile("IteratorRemover.java")
