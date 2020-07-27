@@ -17,8 +17,8 @@ def check1():
   
 @check50.check(exists)
 def check2():
-  """"Example #1"""
-  check50.run("java IRTest \"a b c a b c a\" \"a\"").stdout("[b, c, b, c]").exit(0)
+  """Example #1"""
+  check50.run("java IRTest \"a b c a b c a\" \"a\"").stdout("[b, c, b, c]")
 
 @check50.check(exists)
 def check3():
