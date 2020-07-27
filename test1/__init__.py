@@ -31,4 +31,4 @@ def check4():
   f = open("IteratorRemover.java", "r")
   contents = f.read()
   if contents.find(".iterator()") == -1:
-    raise check50.Failure()
+    raise check50.Failure("You must use an Iterator")
