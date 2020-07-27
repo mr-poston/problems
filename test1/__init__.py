@@ -18,4 +18,4 @@ def check1():
 @check50.check(exists)
 def check2():
   """"a b c a b c a   a -> [b, c, b, c]"""
-  check50.run("java IRTest").stdin("a b c a b c a", "a").stdout("[b, c, b, c]\n").exit(0)
+  check50.run("java IRTest").stdout("[b, c, b, c]\n").exit(0)
