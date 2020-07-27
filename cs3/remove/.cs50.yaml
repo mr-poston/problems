@@ -1,0 +1,9 @@
+check50:
+    files:
+        - !exclude "*"
+        - !include "IteratorRemover.java"
+        - !include "IteratorRemover.class"
+        - !include "IteratorRemoverRunner.java"
+        - !include "IteratorRemoverRunner.class"
+        - !include "IRTest.java"
+        - !include "IRTest.class"
