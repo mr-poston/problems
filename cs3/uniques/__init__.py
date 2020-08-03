@@ -18,7 +18,8 @@ def runner_compiles():
 @check50.check(exists)
 def example1():
     """Example #1"""
-    check50.run("java Grader \"a b c d e f g h a b c d e f g h i j k\"").stdout("a b c d e f g h a b c d e f g h i j k\n[a, b, c, d, e, f, g, h, i, j, k]\n[a, b, c, d, e, f, g, h]", regex=False).exit(0)
+    check50.run("java Grader \"a b c d e f g h a b c d e f g h i j k\"")\
+		.stdout("a b c d e f g h a b c d e f g h i j k\n[a, b, c, d, e, f, g, h, i, j, k]\n[a, b, c, d, e, f, g, h]", regex=False).exit(0)
 
 @check50.check(exists)
 def example2():
