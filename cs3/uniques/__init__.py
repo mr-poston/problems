@@ -37,4 +37,4 @@ def example3():
 def check4():
 		"""Other Tests"""
 		check50.run("java Grader \"\"").stdout("\n[]\n[]", regex=False).exit(0)
-		check50.run("java Grader \"1 2 3\"").stdout("1 2 3\n[1, 2, 3]\n[]", rexex=False).exit(0)
+		check50.run("java Grader \"1 2 3\"").stdout("1 2 3\n[1, 2, 3]\n[]", regex=False).exit(0)
