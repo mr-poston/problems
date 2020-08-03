@@ -22,7 +22,7 @@ def runner_compiles():
 
 @check50.check(exists1)
 def example1():
-    """Example #1"""
+    """Reads from oddeven.dat correctly"""
     check50.run("java OddRunner")\
 		.stdout("ODDS : [1, 5, 9]\nEVENS : [4, 6, 8, 12]\n\n\n" +
 		"ODDS : [3, 5, 7, 17, 29]\nEVENS : [4, 6, 56, 72]\n\n\n" +
