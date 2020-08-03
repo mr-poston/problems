@@ -1,0 +1,10 @@
+check50:
+    files:
+        - !exclude "*"
+        - !include "OddEvenSets.java"
+        - !include "OddEvenSets.class"
+        - !include "OddRunner.java"
+        - !include "OddRunner.class"
+        - !include "Grader.java"
+        - !include "Grader.class"
+        - !include "oddeven.dat"
