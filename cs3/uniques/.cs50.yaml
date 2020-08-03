@@ -1,0 +1,9 @@
+check50:
+    files:
+        - !exclude "*"
+        - !include "UniquesDupes.java"
+        - !include "UniquesDupes.class"
+        - !include "DupRunner.java"
+        - !include "DupRunner.class"
+        - !include "Grader.java"
+        - !include "Grader.class"
