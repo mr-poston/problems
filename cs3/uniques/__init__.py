@@ -24,5 +24,11 @@ def example1():
 @check50.check(exists)
 def example2():
 		"""Example #2"""
-		check50.run("java Grader \"one two three one two three six seven one two\"").stdout("one two three one two three six seven one two\n[one, seven, six, three, two]\n[one, three, two]", regex=False).exit(0)
-		
+		check50.run("java Grader \"one two three one two three six seven one two\"")\
+		.stdout("one two three one two three six seven one two\n[one, seven, six, three, two]\n[one, three, two]", regex=False).exit(0)
+
+@check50.check(exists)
+def example3():
+		"""Example #3"""
+		check50.run("java Grader \"1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 6\"")\
+		.stdout("1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 6\n[1, 2, 3, 4, 5, 6]\n[1, 2, 3, 4, 5]", regex=False).exit(0)
