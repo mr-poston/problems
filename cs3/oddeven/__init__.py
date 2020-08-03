@@ -24,9 +24,9 @@ def runner_compiles():
 def example1():
     """Example #1"""
     check50.run("java OddRunner")\
-		.stdout("ODDS : [1, 5, 9]\nEVENS : [4, 6, 8, 12]\n\n" +
-		"ODDS : [3, 5, 7, 17, 29]\nEVENS : [4, 6, 56, 72]\n\n" +
-		"ODDS : [3]\nEVENS : [2, 6, 12, 28]\n\n" +
-		"ODDS : []\nEVENS : [4]\n\n" +
-		"ODDS : [1]\nEVENS : []\n\n" +
-		"ODDS : [1, 3, 5, 7, 9]\nEVENS : [2, 4, 6, 8]\n\n", regex=False).exit(0)
+		.stdout("ODDS : [1, 5, 9]\nEVENS : [4, 6, 8, 12]\n\n\n" +
+		"ODDS : [3, 5, 7, 17, 29]\nEVENS : [4, 6, 56, 72]\n\n\n" +
+		"ODDS : [3]\nEVENS : [2, 6, 12, 28]\n\n\n" +
+		"ODDS : []\nEVENS : [4]\n\n\n" +
+		"ODDS : [1]\nEVENS : []\n\n\n" +
+		"ODDS : [1, 3, 5, 7, 9]\nEVENS : [2, 4, 6, 8]\n\n\n", regex=False).exit(0)
