@@ -1,8 +1,0 @@
-check50:
-    files:
-        - !exclude "*"
-        - !include "OddEvenSets.java"
-        - !include "OddEvenSets.class"
-        - !include "OddRunner.java"
-        - !include "OddRunner.class"
-        - !include "oddeven.dat"
