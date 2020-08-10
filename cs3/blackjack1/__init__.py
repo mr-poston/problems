@@ -38,25 +38,29 @@ def blank_card():
 @check50.check()
 def ace_diamonds():
     """Ace of Diamonds is correct"""
-    check50.run("java Grader \"1\" \"DIAMONDS\"").stdout("ACE of DIMONDS | value = 11", regex=False).exit(0)
+    check50.run("java Grader \"1\" \"DIAMONDS\"").stdout("ACE of DIAMONDS | value = 11", regex=False).exit(0)
 
 @check50.check()
 def four_clubs():
     """Four of Clubs is correct"""
-    check50.run("java Grader \"4\" \"DCLUBS\"").stdout("FOUR of CLUBS | value = 4", regex=False).exit(0)
+    check50.run("java Grader \"4\" \"CLUBS\"").stdout("FOUR of CLUBS | value = 4", regex=False).exit(0)
 
 @check50.check()
 def queen_spades():
     """Queen of Spades is correct"""
-    check50.run("java Grader \"12\" \"DSPADES\"").stdout("QUEEN of SPADES | value = 10", regex=False).exit(0)
+    check50.run("java Grader \"12\" \"SPADES\"").stdout("QUEEN of SPADES | value = 10", regex=False).exit(0)
 
 @check50.check()
 def queen_hearts():
     """Queen of HEARTS is correct"""
-    check50.run("java Grader \"12\" \"DHEARTS\"").stdout("QUEEN of HEARTS | value = 10", regex=False).exit(0)
+    check50.run("java Grader \"12\" \"HEARTS\"").stdout("QUEEN of HEARTS | value = 10", regex=False).exit(0)
 
 @check50.check()
 def nine_spades():
     """Nine of SPADES is correct"""
-    check50.run("java Grader \"9\" \"DSPADES\"").stdout("NINE of SPADES | value = 9", regex=False).exit(0)
+    check50.run("java Grader \"9\" \"SPADES\"").stdout("NINE of SPADES | value = 9", regex=False).exit(0)
 
+@check50.check()
+def equals_works():
+    """Equals method works correctly"""
+    check50.run("java Grader \"equals\"").stdout("false\ntrue\nfalse\nfalse", regex=False).exit(0)
