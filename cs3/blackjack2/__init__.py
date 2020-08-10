@@ -44,5 +44,5 @@ def decktestone_compiles():
 def blank_card():
     """Deck class seems to function correctly"""
     output = check50.run("java Grader").stdout()
-    if output != "0\n52\n51\n44\n52":
+    if output != "052514452":
         raise check50.Failure("Hmmm... something is not right with Deck")
