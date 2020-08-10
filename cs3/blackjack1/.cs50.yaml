@@ -7,5 +7,3 @@ check50:
         - !include "BlackJackCard.class"
         - !include "CardTestOne.java"
         - !include "CardTestOne.class"
-        - !include "Grader.java"
-        - !include "Grader.class"
