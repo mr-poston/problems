@@ -1,0 +1,9 @@
+check50:
+    files:
+        - !exclude "*"
+        - !include "Card.java"
+        - !include "Card.class"
+        - !include "BlackJackCard.java"
+        - !include "BlackJackCard.class"
+        - !include "CardTestOne.java"
+        - !include "CardTestOne.class"
