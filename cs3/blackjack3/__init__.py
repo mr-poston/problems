@@ -25,28 +25,13 @@ def exists5():
     """PlayerTestOne.java exists"""
     check50.exists("PlayerTestOne.java")
 
-@check50.check(exists1)
-def card_compiles():
-    """Card.java compiles"""
-    check50.run("javac Card.java").exit(0)
-
-@check50.check(exists2)
-def blackjackcard_compiles():
-    """BlackJackCard.java compiles"""
-    check50.run("javac BlackJackCard.java").exit(0)
-
-@check50.check(exists3)
-def deck_compiles():
-    """Deck.java compiles"""
-    check50.run("javac Deck.java").exit(0)
-
 @check50.check(exists4)
-def decktestone_compiles():
+def player_compiles():
     """Player.java compiles"""
     check50.run("javac Player.java").exit(0)
 
 @check50.check(exists5)
-def decktestone_compiles():
+def playertestone_compiles():
     """PlayerTestOne.java compiles"""
     check50.run("javac PlayerTestOne.java").exit(0)
 
