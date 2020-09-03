@@ -59,3 +59,12 @@ def left_check():
     if contents.find(".numCardsLeft();") == -1:
         raise check50.Failure("You must ask the deck how many cards are left");
 
+@check50.check()
+def hit_yes():
+    """Dealer's hit method returns true for a value of 16"""
+    check50.run("java Grader \"yes\"").stdout("true", regex=False).exit(0)
+
+@check50.check()
+def hit_no():
+    """Dealer's hit method returns false for a value of 17"""
+    check50.run("java Grader \"no\"").stdout("false", regex=False).exit(0)
