@@ -1,0 +1,16 @@
+check50:
+    files: &check50_files
+        - !exclude "*"
+        - !include "*.java"
+        - !include "*.class"
+        - !require "Monster.java"
+        - !require "Monster.class"
+        - !require "MonsterRunner.java"
+        - !require "MonsterRunner.class"
+        - !require "Skeleton.java"
+        - !require "Skeleton.class"
+        - !require "Grader.java"
+        - !require "Grader.class"
+
+submit50:
+    files: *check50_files
