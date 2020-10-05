@@ -132,3 +132,7 @@ def helicopter_implements_leaseable():
     if contents.find("implements Leaseable") == -1:
         raise check50.Failure("Helicopter must implement Leaseable")
 
+@check50.check(exists3)
+def car():
+    """Car object successfully instantiated"""
+    check50.run("java Grader car")stdout("2009 Honda Civic, 32.0 mpg, $8100.0", regex=False).exit(0)
