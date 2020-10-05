@@ -91,3 +91,20 @@ def aircraft_is_abstract():
     contents = f.read()
     if contents.find("public abstract class Aircraft") == -1:
         raise check50.Failure("Aircraft must be abstract")
+
+@check50.check(exists3)
+def car_extends_automobile():
+    """Car extends Automobile"""
+    f = open("Car.java", "r")
+    contents = f.read()
+    if contents.find("public class Car extends Automobile") == -1:
+        raise check50.Failure("Car must extend Automobile")
+
+@check50.check(exists4)
+def truck_extends_automobile():
+    """Truck extends Automobile"""
+    f = open("Truck.java", "r")
+    contents = f.read()
+    if contents.find("public class Truck extends Automobile") == -1:
+        raise check50.Failure("Truck must extend Automobile")
+
