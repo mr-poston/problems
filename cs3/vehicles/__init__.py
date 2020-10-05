@@ -140,7 +140,7 @@ def car():
 @check50.check(exists4)
 def truck():
     """Truck object successfully instantiated"""
-    check50.run("java Grader truck").stdout("2014 Chevy Sivlerado, 5000 lbs. towing, $15300.0", regex=False).exit(0)
+    check50.run("java Grader truck").stdout("2014 Chevy Silverado, 5000 lbs. towing, $15300.0", regex=False).exit(0)
 
 @check50.check(exists5)
 def airplane():
