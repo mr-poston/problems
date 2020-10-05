@@ -35,6 +35,31 @@ def automobile_compiles():
     """Automobile.java compiles"""
     check50.run("javac Automobile.java").exit(0)
 
+@check50.check(exists2)
+def aircraft_compiles():
+    """Aircraft.java compiles"""
+    check50.run("javac Aircraft.java").exit(0)
+
+@check50.check(exists3)
+def car_compiles():
+    """Car.java compiles"""
+    check50.run("javac Car.java").exit(0)
+
+@check50.check(exists4)
+def truck_compiles():
+    """Truck.java compiles"""
+    check50.run("javac Truck.java").exit(0)
+
+@check50.check(exists5)
+def airplane_compiles():
+    """Airplane.java compiles"""
+    check50.run("javac Airplane.java").exit(0)
+
+@check50.check(exists6)
+def helicopter_compiles():
+    """Helicopter.java compiles"""
+    check50.run("javac Helicopter.java").exit(0)
+
 @check50.check(exists1)
 def automobile_implements_vehicle():
     """Automobile implements Vehicle"""
@@ -43,17 +68,12 @@ def automobile_implements_vehicle():
     if contents.find("class Automobile implements Vehicle") == -1:
         raise check50.Failure("Automobile must implement Vehicle")
 
-@check50.check(exists2)
-def aircraft_compiles():
-    """Aircraft.java compiles"""
-    check50.run("javac Aircraft.java").exit(0)
-
 @check50.check(exist2)
 def aircraft_implements_vehicle():
     """Aircraft implements Vehicle"""
     f = open("Aircraft.java", "r")
     contents = f.read()
-    if contents.find("public class Aircraft implements Vehicle") == -1:
+    if contents.find("class Aircraft implements Vehicle") == -1:
         raise check50.Failure("Aircraft must implement Vehicle")
 
 @check50.check(exists3)
@@ -65,11 +85,6 @@ def car_extends_automobile():
         raise check50.Failure("Car must extend Automobile")
 
 @check50.check(exists4)
-def truck_compiles():
-    """Truck.java compiles"""
-    check50.run("javac Truck.java").exit(0)
-
-@check50.check(exists4)
 def truck_extends_automobile():
     """Truck extends Automobile"""
     f = open("Truck.java", "r")
@@ -78,22 +93,12 @@ def truck_extends_automobile():
         raise check50.Failure("Truck must extend Automobile")
 
 @check50.check(exists5)
-def airplane_compiles():
-    """Airplane.java compiles"""
-    check50.run("javac Airplane.java").exit(0)
-
-@check50.check(exists5)
 def airplane_extends_aircraft():
     """Airplane extends Aircraft"""
     f = open("Airplane.java", "r")
     contents = f.read()
     if contents.find("public class Airplane extends Aircraft") == -1:
         raise check50.Failure("Airplane must extend Aircraft")
-
-@check50.check(exists6)
-def helicopter_compiles():
-    """Helicopter.java compiles"""
-    check50.run("javac Helicopter.java").exit(0)
 
 @check50.check(exists6)
 def helicopter_extends_aircraft():
