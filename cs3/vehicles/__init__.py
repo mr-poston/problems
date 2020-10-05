@@ -68,3 +68,26 @@ def automobile_implements_vehicle():
     if contents.find("class Automobile implements Vehicle") == -1:
         raise check50.Failure("Automobile must implement Vehicle")
 
+@check50.check(exists1)
+def automobile_is_abstract():
+    """Automobile is abstract"""
+    f = open("Automobile.java", "r")
+    contents = f.read()
+    if contents.find("public abstract class Automobile") == -1:
+        raise check50.Failure("Automobile must be abstract")
+
+@check50.check(exists2)
+def aircraft_implements_vehicle():
+    """Aircraft implements Vehicle"""
+    f = open("Aircraft.java", "r")
+    contents = f.read()
+    if contents.find("class Aircraft implements Vehicle") == -1:
+        raise check50.Failure("Aircraft must implement Vehicle")
+
+@check50.check(exists2)
+def aircraft_is_abstract():
+    """Aircraft is abstract"""
+    f = open("Aircraft.java", "r")
+    contents = f.read()
+    if contents.find("public abstract class Aircraft") == -1:
+        raise check50.Failure("Aircraft must be abstract")
