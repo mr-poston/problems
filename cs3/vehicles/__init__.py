@@ -136,3 +136,18 @@ def helicopter_implements_leaseable():
 def car():
     """Car object successfully instantiated"""
     check50.run("java Grader car").stdout("2009 Honda Civic, 32.0 mpg, $8100.0", regex=False).exit(0)
+
+@check50.check(exists4)
+def truck():
+    """Truck object successfully instantiated"""
+    check50.run("java Grader truck").stdout("2014 Chevy Sivlerado, 5000 lbs. towing, $14000.0", regex=False).exit(0)
+
+@check50.check(exists5)
+def airplane():
+    """Airplane object successfully instantiated"""
+    check50.run("java Grader airplane").stdout("1997 Cessna 206, 6 passengers, $440000.0\nHas first class", regex=False).exit(0)
+
+@check50.check(exists6)
+def helicopter():
+    """Helicopter object successfully instantiated"""
+    check50.run("java Grader helicopter").stdout("1986 Bell 206L, 7 passengers, $660000.0\nDoes not shoot missiles", regex=False).exit(0)
