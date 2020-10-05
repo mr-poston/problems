@@ -108,3 +108,27 @@ def truck_extends_automobile():
     if contents.find("public class Truck extends Automobile") == -1:
         raise check50.Failure("Truck must extend Automobile")
 
+@check50.check(exists5)
+def airplane_extends_aircraft():
+    """Airplane extends Aircraft"""
+    f = open("Airplane.java", "r")
+    contents = f.read()
+    if contents.find("public class Airplane extends Aircraft") == -1:
+        raise check50.Failure("Airplane must extend Aircraft")
+
+@check50.check(exists6)
+def helicopter_extends_aircraft():
+    """Helicopter extends Aircraft"""
+    f = open("Helicopter.java", "r")
+    contents = f.read()
+    if contents.find("extends Aircraft") == -1:
+        raise check50.Failure("Helicopter must extend Aircraft")
+
+@check50.check(exists6)
+def helicopter_implements_leaseable():
+    """Helicopter implements Leaseable"""
+    f = open("Helicopter.java", "r")
+    contents = f.read()
+    if contents.find("implements Leaseable") == -1:
+        raise check50.Failure("Helicopter must implement Leaseable")
+
