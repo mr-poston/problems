@@ -1,0 +1,14 @@
+check50:
+    files: &check50_files
+        - !exclude "*"
+        - !include "*.java"
+        - !include "*.class"
+        - !require "Vehicle.java"
+        - !require "Vehicle.class"
+        - !require "VehicleRunner.java"
+        - !require "VehicleRunner.class"
+        - !require "Leaseable.java"
+        - !require "Leaseable.class"
+
+submit50:
+    files: *check50_files
