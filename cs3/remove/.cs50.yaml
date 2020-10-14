@@ -5,5 +5,5 @@ check50:
         - !include "IteratorRemover.class"
         - !include "IteratorRemoverRunner.java"
         - !include "IteratorRemoverRunner.class"
-        - !include "IRTest.java"
-        - !include "IRTest.class"
+        - !include "Grader.java"
+        - !include "Grader.class"
