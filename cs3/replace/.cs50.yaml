@@ -1,12 +1,14 @@
 check50:
-    files:
+    files: &check50_files
         - !exclude "*"
-        - !include "IteratorReplacer.java"
-        - !include "IteratorReplacer.class"
-        - !include "IteratorReplacerRunner.java"
-        - !include "IteratorReplacerRunner.class"
-        - !include "Grader.java"
-        - !include "Grader.class"
+        - !include "*.java"
+        - !include "*.class"
+        - !require "IteratorReplacer.java"
+        - !require "IteratorReplacer.class"
+        - !require "IteratorReplacerRunner.java"
+        - !require "IteratorReplacerRunner.class"
+        - !require "Grader.java"
+        - !require "Grader.class"
 
 submit50:
     files: *check50_files
