@@ -9,4 +9,4 @@ check50:
         - !include "Grader.class"
 
 submit50:
-    files: *check50_files        
+    files: *check50_files
