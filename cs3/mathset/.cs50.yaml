@@ -3,8 +3,8 @@ check50:
         - !exclude "*"
         - !include "MathSet.java"
         - !include "MathSet.class"
-        - !include "MathSetRunner.java"
-        - !include "MathSetRunner.class"
+        - !include "Grader.java"
+        - !include "Grader.class"
         - !include "mathset.dat"
 
 submit50:
