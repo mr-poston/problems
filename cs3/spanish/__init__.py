@@ -24,7 +24,7 @@ def runner_compiles():
 def example1():
     """putEntry method works"""
     check50.run("java Grader 1 \"ordenador computer\" \"quiero want\" \"una a\" \"virus virus\" \"yo i\"")\
-            .stdout("{ordenador=computer\nquiero=want\nuna=a\nvirus=virus\nyo=i}", regex=False).exit(0)
+            .stdout("{ordenador=computer\n quiero=want\n una=a\n virus=virus\n yo=i}", regex=False).exit(0)
 
 @check50.check()
 def example2():
