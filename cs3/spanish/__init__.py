@@ -30,5 +30,5 @@ def example1():
 def example2():
     """translate method works"""
     check50.run("java Grader 2 \"ordenador computer\" \"quiero want\" \"una a\" \"virus virus\" \"yo i\"")\
-            .stdout("i want a comuputer virus ", regex=False).exit(0)
+            .stdout("i want a computer virus ", regex=False).exit(0)
 
