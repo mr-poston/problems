@@ -33,13 +33,13 @@ def example2():
             .stdout("char\t1---5----01---5\n1\t****\n2\t***\n3\t****\n4\t***\n5\t**\n6\t*\n\n", regex=False).exit(0)
 
 @check50.check()
-def example2():
+def example3():
     """Y U I O Q W E R T Y works"""
     check50.run("java Grader \"Y U I O Q W E R T Y\"")\
             .stdout("char\t1---5----01---5\nE\t*\nI\t*\nO\t*\nQ\t*\nR\t*\nT\t*\nU\t*\nW\t*\nY\t**\n\n", regex=False).exit(0)
 
 @check50.check()
-def example2():
+def example4():
     """4 T # @ ^ # # # works"""
     check50.run("java Grader \"4 T # @ ^ # # #\"")\
             .stdout("char\t1---5----01---5\n#\t****\n4\t*\n@\t*\nT\t*\n^\t*\n\n", regex=False).exit(0)
