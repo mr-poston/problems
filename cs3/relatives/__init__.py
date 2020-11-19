@@ -46,6 +46,6 @@ def example6():
     check50.run("java Grader Jim").stdout("[Sally, Tammy, Tom]", regex=False).exit(0)
 
 @check50.check()
-def example2():
+def example7():
     """Works for Timmy"""
     check50.run("java Grader Timmy").stdout("[Amanda]", regex=False).exit(0)
