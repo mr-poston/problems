@@ -49,8 +49,3 @@ def example6():
 def example2():
     """Works for Timmy"""
     check50.run("java Grader Timmy").stdout("[Amanda]", regex=False).exit(0)
-
-@check50.check()
-def example2():
-    """Works for names not in `relatives.dat`"""
-    check50.run("java Grader Sam").stdout("[]", regex=False).exit(0)
