@@ -10,11 +10,6 @@ def exists2():
 	"""AcroRunner.java exists"""
 	check50.exists("AcroRunner.java")
 
-@check50.check(exists1)
-def class_compiles():
-    """Acronyms.java compiles"""
-    check50.run("javac Acronynms.java").exit(0)
-
 @check50.check()
 def example1():
     """First line works"""
