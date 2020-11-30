@@ -1,0 +1,13 @@
+check50:
+    files: &check50_files
+        - !exclude "*"
+        - !include "Acronyms.java"
+        - !include "Acronyms.class"
+        - !include "AcroRunner.java"
+        - !include "AcroRunner.class"
+        - !include "Grader.java"
+        - !include "Grader.class"
+        - !include "acro.dat"
+
+submit50:
+    files: *check50_files
