@@ -1,0 +1,15 @@
+check50:
+    files: &check50_files
+        - !exclude "*"
+        - !include "Part.java"
+        - !include "Part.class"
+        - !include "PartList.java"
+        - !include "PartList.class"
+        - !include "PartsRunner.java"
+        - !include "PartsRunner.class"
+        - !include "Grader.java"
+        - !include "Grader.class"
+        - !include "partinfo.dat"
+
+submit50:
+    files: *check50_files
