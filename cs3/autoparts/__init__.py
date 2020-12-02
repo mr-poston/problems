@@ -34,10 +34,10 @@ def example3():
 def example4():
     """PartList works"""
     check50.run("java Grader PartList").\
-            stdout("Done!\n *Chevy +Camaro +2009 +Wiper +Blades +12321 - 1 *\n" +\
-            " *Chevy +Silvarado +2019 +Air +Filter +98765 - 2 *\n" +\
-            " *Dodge +Ram +2012 +Radiator +23102 - 1 *" +\
-            " *Ford +Expedition +2016 +Water +Pump +19912 - 1 *" +\
-            " *Ford +Focus +2017 +Fuel +Filter +19967 - 1 *" +\
-            " *Ford +Focus +2017 +Water +Pump +19934 - 2 *", regex=True).exit(0)
+            stdout("Done!\n *Chevy +Camaro +2009 +Wiper +Blades +12321 - 1 *\n" +
+            " *Chevy +Silvarado +2019 +Air +Filter +98765 - 2 *\n" +
+            " *Dodge +Ram +2012 +Radiator +23102 - 1 *" +
+            " *Ford +Expedition +2016 +Water +Pump +19912 - 1 *\n" +
+            " *Ford +Focus +2017 +Fuel +Filter +19967 - 1 *\n" +
+            " *Ford +Focus +2017 +Water +Pump +19934 - 2 *\n*", regex=True).exit(0)
 
