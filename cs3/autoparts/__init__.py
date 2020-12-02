@@ -39,5 +39,5 @@ def example4():
             "Dodge Ram 2012  Radiator 23102 - 1\n" +
             "Ford Expedition 2016  Water Pump 19912 - 1\n" +
             "Ford Focus 2017  Fuel Filter 19967 - 1\n" +
-            "Ford Focus 2017  Water Pump 19934 - 2", regex=True).exit(0)
+            "Ford Focus 2017  Water Pump 19934 - 2\n\n", regex=True).exit(0)
 
