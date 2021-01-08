@@ -1,0 +1,10 @@
+check50:
+    files: &check50_files
+        - !exclude "*"
+        - !include "SyntaxChecker.java"
+        - !include "SyntaxChecker.class"
+        - !include "SyntaxCheckRunner.java"
+        - !include "SyntaxCheckRunner.class"
+
+submit50:
+    files: *check50_files
