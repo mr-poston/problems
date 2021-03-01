@@ -8,7 +8,7 @@ def exists1():
 @check50.check(exists1)
 def class_compiles():
     """ListFunHouse.java compiles"""
-    check50.run("javac ListFunHouse.java").exit(0)
+    check50.run("javac ListFunHouse.java")
 
 @check50.check(class_compiles)
 def test_print():
