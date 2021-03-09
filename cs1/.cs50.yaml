@@ -7,7 +7,11 @@ check50:
                 - John
                 - David
                 - Poston
-              stdout:
-                - Number of names: Name: Name: Name: First name: John
-                - Middle names: ['David']
-                - Last name: Poston
+              stdout: |
+                Number of names:
+                Name:
+                Name:
+                Name:
+                First name: John
+                Middle names: ['David']
+                Last name: Poston
