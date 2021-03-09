@@ -8,6 +8,6 @@ check50:
                 - David
                 - Poston
               stdout:
-                - First name: John
+                - Number of names: Name: Name: Name: First name: John
                 - Middle names: ['David']
                 - Last name: Poston
