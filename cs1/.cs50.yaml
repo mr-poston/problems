@@ -1,0 +1,13 @@
+check50:
+    checks:
+        Test has three names:
+            - run: python3 main.py
+              stdin:
+                - 3
+                - John
+                - David
+                - Poston
+              stdout:
+                - First name: John
+                - Middle names: ['David']
+                - Last name: Poston
