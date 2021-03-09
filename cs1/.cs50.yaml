@@ -2,12 +2,23 @@ check50:
     checks:
         Test has three names:
             - run: python3 main.py
+              stdout:
+                - Number of names:
               stdin:
                 - 3
+              stdout:
+                - Name:
+              stdin:
                 - John
+              stdout:
+                - Name:
+              stdin:
                 - David
+              stdout:
+                - Name:
+              stdin:
                 - Poston
               stdout:
-                - Number of names: Name: Name: Name: First name: John
+                - First name: John
                 - Middle names: ['David']
                 - Last name: Poston
