@@ -3,20 +3,11 @@ check50:
         Test has three names:
             - run: python3 main.py
               stdout:
-                - Number of names:
+                - Number of names: Name: Name: Name:
               stdin:
                 - 3
-              stdout:
-                - Name:
-              stdin:
                 - John
-              stdout:
-                - Name:
-              stdin:
                 - David
-              stdout:
-                - Name:
-              stdin:
                 - Poston
               stdout:
                 - First name: John
