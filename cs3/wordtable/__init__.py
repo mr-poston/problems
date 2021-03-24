@@ -33,14 +33,14 @@ def test_hash_code():
 @check50.check(class2_compiles)
 def test_hash_code():
     """HashTables's add and toString methods work"""
-    check50.run("java Grader add").stdout("HASHTABLE" \
-                                        + "bucket 0 [onimonapia]" \
-                                        + "bucket 1 [hootowl, a]" \
-                                        + "bucket 2 [ferret, go]" \
-                                        + "bucket 3 [two, dog, cat, pig, owl, run, hop]" \
-                                        + "bucket 4 [chicken, jump]" \
-                                        + "bucket 5 []" \
-                                        + "bucket 6 [one, shortcut, alligator]" \
-                                        + "bucket 7 []" \
-                                        + "bucket 8 [goat, food]" \
-                                        + "bucket 9 []", regex=False).exit(0)
+    check50.run("java Grader add").stdout("HASHTABLE\n" \
+                                        + "bucket 0 [onimonapia]\n" \
+                                        + "bucket 1 [hootowl, a]\n" \
+                                        + "bucket 2 [ferret, go]\n" \
+                                        + "bucket 3 [two, dog, cat, pig, owl, run, hop]\n" \
+                                        + "bucket 4 [chicken, jump]\n" \
+                                        + "bucket 5 []\n" \
+                                        + "bucket 6 [one, shortcut, alligator]\n" \
+                                        + "bucket 7 []\n" \
+                                        + "bucket 8 [goat, food]\n" \
+                                        + "bucket 9 []\n", regex=False).exit(0)
