@@ -3,12 +3,12 @@ import check50
 @check50.check()
 def exists():
     """AtCounter.java exists"""
-    check50.exists("Recur.java");
+    check50.exists("AtCounter.java");
 
 @check50.check(exists)
 def class_compiles():
     """AtCounter.java compiles"""
-    check50.run("javac Recur.java").exit(0)
+    check50.run("javac AtCounter.java").exit(0)
 
 @check50.check(class_compiles)
 def test_0():
