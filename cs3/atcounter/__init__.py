@@ -13,7 +13,7 @@ def class_compiles():
 @check50.check(class_compiles)
 def test_0():
     """toString works"""
-    check50.run("java Grader 0").stdout("- - -\n@ - -\n@ @ -\n\n", regex=False).exit(0)
+    check50.run("java Grader 0").stdout("- - - \n@ - - \n@ @ - \n\n", regex=False).exit(0)
 
 @check50.check(class_compiles)
 def test_1():
