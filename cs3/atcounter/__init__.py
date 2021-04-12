@@ -10,7 +10,7 @@ def class_compiles():
     """AtCounter.java compiles"""
     check50.run("javac Recur.java").exit(0)
 
-@check50.checks(class_compiles)
+@check50.check(class_compiles)
 def test_0():
     """toString works"""
     check50.run("java Grader 0").stdout("- - -\n@ - -\n@ @ -\n", regex=False).exit(0)
