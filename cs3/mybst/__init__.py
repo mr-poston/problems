@@ -13,7 +13,7 @@ def class_compiles():
 @check50.check(class_compiles)
 def test_0():
     """Everything looks good!"""
-    check50.run("java BSTRunner").stdout("Original Tree >>>\n \
+    check50.run("java BSTRunner").stdout("Original Tree >>>\n\
 1 2 3 4 6 8 9 10 15 16 20 25 \n\
 \n\
 Check whether Node with value 4 exists >>> true\n\
