@@ -12,31 +12,45 @@ def class_compiles():
 
 @check50.check(class_compiles)
 def test_0():
-    """Everything looks good!"""
-    check50.run("java BSTRunner").stdout("Original Tree >>>\n\
-1 2 3 4 6 8 9 10 15 16 20 25 \n\
-\n\
-Check whether Node with value 4 exists >>> true\n\
-\n\
-Delete Node with no children (2) >>> true\n\
-1 3 4 6 8 9 10 15 16 20 25 \n\
-\n\
-Delete Node with one child (4) >>> true\n\
-1 3 6 8 9 10 15 16 20 25 \n\
-\n\
-Delete Node with Two children (10) >>> true\n\
-1 3 6 8 9 15 16 20 25 \n\
-\n\
-Final state of tree:\n\
-1 3 6 8 9 15 16 20 25 \n\
-\n\
-Minimum value >>> 1\n\
-\n\
-Maximum value >>> 25\n\
-\n\
-        1\n\
-    2\n\
-        3\n\
-5\n\
-    6\n\
-        9", regex=False).exit(0)
+    """insert and inOrder work"""
+    check50.run("java Grader inOrder").stdout("1 2 3 5 6 9", regex=False).exit(0)
+
+@check50.check(class_compiles)
+def test_1():
+    """contains works"""
+    check50.run("java Grader contains").stdout("true", regex=False).exit(0)
+
+@check50.check(class_compiles)
+def test_2():
+    """deleting a node with no children works"""
+    check50.run("java Grader delete0").stdout("true", regex=False).exit(0)
+
+@check50.check(class_compiles)
+def test_3():
+    """deleting a node with 1 child works"""
+    check50.run("java Grader delete1").stdout("true", regex=False).exit(0)
+
+@check50.check(class_compiles)
+def test_4():
+    """deleting a node with 2 children works"""
+    check50.run("java Grader delete2").stdout("true", regex=False).exit(0)
+
+@check50.check(class_compiles)
+def test_5():
+    """attempting to delete a node that is not in the tree works"""
+    check50.run("java Grader deleteNo").stdout("false", regex=False).exit(0)
+
+@check50.check(class_compiles)
+def test_6():
+    """getMax works"""
+    check50.run("java Grader getMax").stdout("9", regex=False).exit(0)
+
+@check50.check(class_compiles)
+def test_7():
+    """getMin works"""
+    check50.run("java Grader getMin").stdout("1", regex=False).exit(0)
+
+@check50.check(class_compiles)
+def test_8():
+    """print works"""
+    check50.run("java Grader print").stdout("        1\n    2\n        3\n5\n    6\n        9", regex=False).exit(0)
