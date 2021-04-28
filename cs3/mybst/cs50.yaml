@@ -1,0 +1,15 @@
+check50:
+    files: &check50_files
+        - !exclude "*"
+        - !include "*.java"
+        - !include "*.class"
+        - !require "MyBST.java"
+        - !require "BSTRunner.java"
+        - !require "Grader.java"
+        - !require "MyBST.class"
+        - !require "MyBST$BSTNode.class"
+        - !require "BSTRunner.class"
+
+
+submit50:
+    files: *check50_files
