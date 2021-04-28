@@ -14,21 +14,21 @@ def class_compiles():
 def test_0():
     """Everything looks good!"""
     check50.run("java BSTRunner").stdout("Original Tree >>>\n \
-1 2 3 4 6 8 9 10 15 16 20 25\n\
+1 2 3 4 6 8 9 10 15 16 20 25 \n\
 \n\
 Check whether Node with value 4 exists >>> true\n\
 \n\
 Delete Node with no children (2) >>> true\n\
-1 3 4 6 8 9 10 15 16 20 25\n\
+1 3 4 6 8 9 10 15 16 20 25 \n\
 \n\
 Delete Node with one child (4) >>> true\n\
-1 3 6 8 9 10 15 16 20 25\n\
+1 3 6 8 9 10 15 16 20 25 \n\
 \n\
 Delete Node with Two children (10) >>> true\n\
-1 3 6 8 9 15 16 20 25\n\
+1 3 6 8 9 15 16 20 25 \n\
 \n\
 Final state of tree:\n\
-1 3 6 8 9 15 16 20 25\n\
+1 3 6 8 9 15 16 20 25 \n\
 \n\
 Minimum value >>> 1\n\
 \n\
