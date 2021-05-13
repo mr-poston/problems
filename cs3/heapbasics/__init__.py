@@ -23,4 +23,4 @@ def test_add():
 @check50.check(class_compiles)
 def test_remove():
     """Remove works correctly"""
-    check50.run("java Grader add").stdout("[17, 9, 10, 5, 8, 2, 7, 1]", regex=False).exit(0)
+    check50.run("java Grader remove").stdout("[17, 9, 10, 5, 8, 2, 7, 1]", regex=False).exit(0)
