@@ -1,0 +1,16 @@
+check50:
+    files: &check50_files
+        - !exclude "*"
+        - !include "*.java"
+        - !include "*.class"
+        - !require "Card.java"
+        - !require "Card.class"
+        - !require "BlackJackCard.java"
+        - !require "BlackJackCard.class"
+        - !require "CardTestOne.java"
+        - !require "CardTestOne.class"
+        - !require "Grader.java"
+        - !require "Grader.class"
+
+submit50:
+    files: *check50_files

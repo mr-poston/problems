@@ -1,0 +1,11 @@
+check50:
+    files: &check50_files
+        - !exclude "*"
+        - !include "MathSet.java"
+        - !include "MathSet.class"
+        - !include "Grader.java"
+        - !include "Grader.class"
+        - !include "mathset.dat"
+
+submit50:
+    files: *check50_files

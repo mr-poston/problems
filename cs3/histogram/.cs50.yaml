@@ -1,0 +1,13 @@
+check50:
+    files: &check50_files
+        - !exclude "*"
+        - !include "Histogram.java"
+        - !include "Histogram.class"
+        - !include "HistoRunner.java"
+        - !include "HistoRunner.class"
+        - !include "Grader.java"
+        - !include "Grader.class"
+        - !include "histogram.dat"
+
+submit50:
+    files: *check50_files

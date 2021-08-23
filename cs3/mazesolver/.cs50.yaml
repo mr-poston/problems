@@ -1,0 +1,16 @@
+check50:
+    files: &check50_files
+        - !exclude "*"
+        - !include "*.java"
+        - !include "*.class"
+        - !require "Maze.java"
+        - !require "MazeRunner.java"
+        - !require "Grader.java"
+        - !require "Maze.class"
+        - !require "MazeRunner.class"
+        - !require "Grader.class"
+        - !require "maze.dat"
+
+
+submit50:
+    files: *check50_files

@@ -1,0 +1,22 @@
+check50:
+    files: &check50_files
+        - !exclude "*"
+        - !include "*.java"
+        - !include "*.class"
+        - !include "words.dat"
+        - !require "Linkable.java"
+        - !require "ListNode.java"
+        - !require "MyLinkedList.java"
+        - !require "Grader.java"
+        - !require "Word.java"
+        - !require "HashTable.java"
+        - !require "Linkable.class"
+        - !require "ListNode.class"
+        - !require "MyLinkedList.class"
+        - !require "Grader.class"
+        - !require "Word.class"
+        - !require "HashTable.class"
+        - !require "words.dat"
+
+submit50:
+    files: *check50_files

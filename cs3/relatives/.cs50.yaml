@@ -1,0 +1,13 @@
+check50:
+    files: &check50_files
+        - !exclude "*"
+        - !include "Relatives.java"
+        - !include "Relatives.class"
+        - !include "RelativesRunner.java"
+        - !include "RelativesRunner.class"
+        - !include "Grader.java"
+        - !include "Grader.class"
+        - !include "relatives.dat"
+
+submit50:
+    files: *check50_files

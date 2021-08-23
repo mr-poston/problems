@@ -1,0 +1,19 @@
+check50:
+    files: &check50_files
+        - !exclude "*"
+        - !include "*.java"
+        - !include "*.class"
+        - !require "AtCounter.java"
+        - !require "AtCounterRunner.java"
+        - !require "Grader.java"
+        - !require "AtCounter.class"
+        - !require "AtCounterRunner.class"
+        - !require "Grader.class"
+        - !require "pattern1.dat"
+        - !require "pattern2.dat"
+        - !require "pattern3.dat"
+        - !require "pattern4.dat"
+
+
+submit50:
+    files: *check50_files

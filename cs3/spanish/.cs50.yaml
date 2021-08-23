@@ -1,0 +1,13 @@
+check50:
+    files: &check50_files
+        - !exclude "*"
+        - !include "SpanishToEnglish.java"
+        - !include "SpanishToEnglish.class"
+        - !include "SpanRunner.java"
+        - !include "SpanRunner.class"
+        - !include "Grader.java"
+        - !include "Grader.class"
+        - !include "spantoeng.dat"
+
+submit50:
+    files: *check50_files

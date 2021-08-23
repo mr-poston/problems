@@ -1,0 +1,18 @@
+check50:
+    files: &check50_files
+        - !exclude "*"
+        - !include "*.java"
+        - !include "*.class"
+        - !require "Linkable.java"
+        - !require "ListNode.java"
+        - !require "ListFunHouseTwo.java"
+        - !require "ListFunHouseTwo.java"
+        - !require "Grader.java"
+        - !require "Linkable.class"
+        - !require "ListNode.class"
+        - !require "ListFunHouseTwo.class"
+        - !require "ListFunHouseTwo.class"
+        - !require "Grader.class"
+
+submit50:
+    files: *check50_files
