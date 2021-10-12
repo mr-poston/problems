@@ -41,6 +41,6 @@ def example3():
 @check50.check()
 def example4():
     """Works with no-parameter constructor"""
-    check50.run("java Grader")\
+    check50.run("java Grader 4")\
             .stdout("[]\n\npopping all items from the stack\n", regex=False).exit(0)
 
