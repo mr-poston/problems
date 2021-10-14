@@ -23,7 +23,7 @@ def runner_compiles():
 @check50.check(class_compiles)
 def constructors():
     """Both Constructors Work"""
-    check50.run("java Grader").exit(0)
+    check50.run("java Grader x").exit(0)
 
 @check50.check(constructors)
 def is_empty():
