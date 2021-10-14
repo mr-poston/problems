@@ -1,0 +1,12 @@
+check50:
+    files: &check50_files
+        - !exclude "*"
+        - !include "Postfix.java"
+        - !include "Postfix.class"
+        - !include "PostfixRunner.java"
+        - !include "PostfixRunner.class"
+        - !include "Grader.java"
+        - !include "Grader.class"
+
+submit50:
+    files: *check50_files
