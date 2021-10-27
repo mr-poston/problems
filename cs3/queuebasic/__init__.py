@@ -38,27 +38,27 @@ def example1():
 @check50.check(grader_compiles)
 def example2():
     """Example 2"""
-    check50.run("java Grader 1").stdout("n", regex=False).exit(0)
+    check50.run("java Grader 2").stdout("n", regex=False).exit(0)
 
 @check50.check(grader_compiles)
 def example3():
     """Example 3"""
-    check50.run("java Grader 1").stdout("n", regex=False).exit(0)
+    check50.run("java Grader 3").stdout("n", regex=False).exit(0)
 
 @check50.check(grader_compiles)
 def example4():
     """Example 4"""
-    check50.run("java Grader 1").stdout("y", regex=False).exit(0)
+    check50.run("java Grader 4").stdout("y", regex=False).exit(0)
 
 @check50.check(grader_compiles)
 def example5():
     """Example 5"""
-    check50.run("java Grader 1").stdout("y", regex=False).exit(0)
+    check50.run("java Grader 5").stdout("y", regex=False).exit(0)
 
 @check50.check(grader_compiles)
 def example6():
-    """Example 1"""
-    check50.run("java Grader 1").stdout("n", regex=False).exit(0)
+    """Example 6"""
+    check50.run("java Grader 6").stdout("n", regex=False).exit(0)
 
 @check50.check(runner_compliles)
 def runner_check():
