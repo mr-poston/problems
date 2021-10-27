@@ -1,0 +1,12 @@
+check50:
+    files: &check50_files
+        - !exclude "*"
+        - !include "PalinList.java"
+        - !include "PalinList.class"
+        - !include "PalinListRunner.java"
+        - !include "PalinListRunner.class"
+        - !include "Grader.java"
+        - !include "Grader.class"
+
+submit50:
+    files: *check50_files
