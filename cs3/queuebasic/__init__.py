@@ -60,7 +60,7 @@ def example6():
     """Example 6"""
     check50.run("java Grader 6").stdout("n", regex=False).exit(0)
 
-@check50.check(runner_compliles)
+@check50.check(runner_compiles)
 def runner_check():
     """PalinListRunner output is correct"""
     check50.run("java PalinListRunner").stdout("[one, two, three, two, one] is a palinlist.\n\n[1, 2, 3, 4, 5, one, two, three, four, five] is not a palinlist.\n\n[a, b, c, d, e, f, g, x, y, z, g, f, h] is not a palinlist.\n\n[racecar, is, racecar] is a palinlist.\n\n[1, 2, 3, a, b, c, c, b, a, 3, 2, 1] is a palinlist.\n\n[chicken, is, a, chicken] is not a palinlist.\n\n", regex=False).exit(0)
