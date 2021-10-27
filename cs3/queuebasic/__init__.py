@@ -26,7 +26,7 @@ def grader_compiles():
     check50.run("javac Grader.java").exit(0)
 
 @check50.check(exists3)
-def class_compiles():
+def runner_compiles():
     """PalinListRunner.java compiles"""
     check50.run("javac PalinListRunner.java").exit(0)
 
