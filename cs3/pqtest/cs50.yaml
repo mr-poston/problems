@@ -1,0 +1,10 @@
+check50:
+    files: &check50_files
+        - !exclude "*"
+        - !include "PQTester.java"
+        - !include "PQTester.class"
+        - !include "PQTesterRunner.java"
+        - !include "PQTesterRunner.class"
+
+submit50:
+    files: *check50_files
