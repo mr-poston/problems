@@ -22,8 +22,21 @@ def runner_compiles():
 
 @check50.check(class_compiles)
 def example1():
-    """Example 1"""
+    """one two three four five six seven"""
     check50.run("java PQTesterRunner.java")\
     .stdin("one two three four five six seven")\
     .stdout("[five, four, seven, two, one, three, six]\nfive\nfive four one seven six three two", regex=False).exit(0)
 
+@check50.check(class_compiles)
+def example2():
+    """1 2 3 4 5 one two three four five"""
+    check50.run("java PQTesterRunner.java")\
+    .stdin("1 2 3 4 5 one two three four five")\
+    .stdout("[1, 3, 2, 4, 5, three, five, two, four, one]\n1\n1 2 3 4 5 five four one three two", regex=False).exit(0)
+
+@check50.check(class_compiles)
+def example3():
+    """a p h j e f m c i d k l g n o b"""
+    check50.run("java PQTesterRunner.java")\
+    .stdin("a p h j e f m c i d k l g n o b")\
+    .stdout("[a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p]\na\na b c d e f g h i j k l m n o p", regex=False).exit(0)
