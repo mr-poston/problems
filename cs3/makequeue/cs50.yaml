@@ -1,0 +1,10 @@
+check50:
+    files: &check50_files
+        - !exclude "*"
+        - !include "IntQueue.java"
+        - !include "IntQueue.class"
+        - !include "IntQueueRunner.java"
+        - !include "IntQueueRunner.class"
+
+submit50:
+    files: *check50_files
